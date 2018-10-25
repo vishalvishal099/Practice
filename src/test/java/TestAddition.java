@@ -1,5 +1,7 @@
 import org.junit.Assert;
 import org.junit.Test;
+import static org.assertj.core.api.Assertions.*;
+
 
 public class TestAddition {
     FindAdditin fn = new FindAdditin();
@@ -7,12 +9,12 @@ public class TestAddition {
 
     @Test
     public void addition_Of_single_char_Of_fabbanacci_series() {
-        Assert.assertEquals(fn.getAdditionCount("f"), 5);
+        assertThat(fn.getAdditionCount("f")).isEqualTo(5);
     }
 
     @Test
     public void addition_Of_multiple_char_Of_fabbanacci_series() {
-        Assert.assertEquals(fn.getAdditionCount("fgh"), 26);
+        assertThat(fn.getAdditionCount("f")).isEqualTo(5);
     }
 
 
